@@ -1,28 +1,9 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+<div>
+  <button ng-click="startVoiceCapture()">Start</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button ng-click="stopVoiceCapture()">Stop</button>
 </div>
-
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-  <section id="section_hello" style="visibility:hidden">
-    <p><em>Go ahead, try it&hellip;</em></p>
-    <p>Say "Hello!"</p>
-    <p id="hello">Annyang!</p>
-  </section>
+<br><br>
+<div>
+  <label>Sachin</label>&nbsp;&nbsp;<input id="playerOneScoreId" type="number" ng-model="playerOneScore" ng-disabled="isDisabled"/><br><br>
+  <label>Sourav</label>&nbsp;<input id="playerTwoScoreId" type="number" ng-model="playerTwoScore" ng-disabled="isDisabled"/>
 </div>

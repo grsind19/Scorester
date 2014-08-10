@@ -8,5 +8,11 @@
  *
  * Main module of the application.
  */
-angular
-  .module('scoreStarApp', []);
+var scoreStarApp = angular.module('scoreStarApp', ['ngRoute']);
+
+scoreStarApp.config(['$routeProvider',function($routeProvider){
+  $routeProvider.when('/home',{
+    templateUrl:'views/main.html',
+    controller:'main',
+  });
+}]);
